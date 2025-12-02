@@ -1,5 +1,3 @@
-# 🌀 **Umaku**
-
 <h3 align="center">
  <img src="repo/imgs/banner.png"/>
 </h3>
