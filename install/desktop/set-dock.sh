@@ -15,8 +15,6 @@ apps=(
 	"md.obsidian.Obsidian.desktop"
 	"Activity.desktop"
 	"Docker.desktop"
-	"Omakub.desktop"
-	"1password.desktop"
 	"org.gnome.Settings.desktop"
 	"org.gnome.Nautilus.desktop"
 	"localsend_app.desktop"
