@@ -3,6 +3,14 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+# Needed for all installers
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install -y curl git unzip
+
+# Clone repo to home directory
+git clone https://github.com/mrpbennett/umaku.git
+
 # Give people a chance to retry running the installation
 trap 'echo "umaku installation failed! You can retry by running: source ~/.local/share/umaku/install.sh"' ERR
 
