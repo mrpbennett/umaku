@@ -1,5 +1,10 @@
 #!/bin/bash
 
+sudo apt install zsh
+
+# make zsh default
+sudo chsh -s $(which zsh) -y
+
 # Configure the bash shell using Umaku defaults
 [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshhrc.bak
 cp ~/umaku/configs/zshhrc ~/.zshhrc
