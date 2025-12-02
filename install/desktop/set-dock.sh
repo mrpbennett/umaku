@@ -30,7 +30,7 @@ desktop_dirs=(
 	"/var/lib/flatpak/exports/share/applications"
 	"/usr/share/applications"
 	"/usr/local/share/applications"
-	"$HOME/.local/share/applications"
+	"$HOME/applications"
 )
 
 # Check if a .desktop file exists for each app

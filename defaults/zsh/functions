@@ -32,8 +32,8 @@ web2app() {
   local APP_NAME="$1"
   local APP_URL="$2"
   local ICON_URL="$3"
-  local ICON_DIR="$HOME/.local/share/applications/icons"
-  local DESKTOP_FILE="$HOME/.local/share/applications/${APP_NAME}.desktop"
+  local ICON_DIR="$HOME/applications/icons"
+  local DESKTOP_FILE="$HOME/applications/${APP_NAME}.desktop"
   local ICON_PATH="${ICON_DIR}/${APP_NAME}.png"
 
   mkdir -p "$ICON_DIR"
@@ -67,8 +67,8 @@ web2app-remove() {
   fi
 
   local APP_NAME="$1"
-  local ICON_DIR="$HOME/.local/share/applications/icons"
-  local DESKTOP_FILE="$HOME/.local/share/applications/${APP_NAME}.desktop"
+  local ICON_DIR="$HOME/applications/icons"
+  local DESKTOP_FILE="$HOME/applications/${APP_NAME}.desktop"
   local ICON_PATH="${ICON_DIR}/${APP_NAME}.png"
 
   rm "$DESKTOP_FILE"

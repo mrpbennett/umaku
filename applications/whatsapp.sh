@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat <<EOF >~/.local/share/applications/WhatsApp.desktop
+cat <<EOF >~/applications/WhatsApp.desktop
 [Desktop Entry]
 Version=1.0
 Name=WhatsApp
@@ -8,7 +8,7 @@ Comment=WhatsApp Messenger
 Exec=google-chrome --app="https://web.whatsapp.com" --name=WhatsApp --class=Whatsapp
 Terminal=false
 Type=Application
-Icon=/home/$USER/.local/share/umaku/applications/icons/WhatsApp.png
+Icon=/home/$USER/umaku/applications/icons/WhatsApp.png
 Categories=GTK;
 MimeType=text/html;text/xml;application/xhtml_xml;
 StartupNotify=true
