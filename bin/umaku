@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source $UMAKU_PATH/bin/umaku-sub/header.sh
+source $UMAKU_PATH/bin/umaku-sub/menu.sh

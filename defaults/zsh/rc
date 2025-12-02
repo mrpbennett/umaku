@@ -1,0 +1,3 @@
+source ~/.local/share/umaku/defaults/bash/aliases
+source ~/.local/share/umaku/defaults/bash/functions
+source ~/.local/share/umaku/defaults/bash/init
