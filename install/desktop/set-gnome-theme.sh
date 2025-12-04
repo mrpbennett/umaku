@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source ~/umaku/themes/catppuccin/gnome.sh
-source ~/umaku/themes/catppuccin/tophat.sh
+source ~/.local/share/umaku/themes/catppuccin/gnome.sh
+source ~/.local/share/umaku/themes/catppuccin/tophat.sh

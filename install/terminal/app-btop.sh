@@ -5,5 +5,5 @@ sudo apt install -y btop
 
 # Use Omakub btop config
 mkdir -p ~/.config/btop/themes
-cp ~/umaku/configs/btop.conf ~/.config/btop/btop.conf
-cp ~/umaku/themes/catppuccin/btop.theme ~/.config/btop/themes/catppuccin.theme
+cp ~/.local/share/umaku/configs/btop.conf ~/.config/btop/btop.conf
+cp ~/.local/share/umaku/themes/catppuccin/btop.theme ~/.config/btop/themes/catppuccin.theme
