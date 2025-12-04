@@ -1,4 +1,4 @@
-include "%H/umaku/defaults/xcompose"
+include "%H/.local/share/umaku/defaults/xcompose"
 
 # Identification
 <Multi_key> <space> <n> : "$UMAKU_USER_NAME"

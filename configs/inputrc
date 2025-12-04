@@ -1,1 +1,1 @@
-$include ~/umaku/defaults/zsh/inputrc
+$include ~/.local/share/umaku/defaults/zsh/inputrc

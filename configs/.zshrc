@@ -1,4 +1,4 @@
-source ~/umaku/defaults/zsh/rc
+source ~/.local/share/umaku/defaults/zsh/rc
 
 # Editor used by CLI
 export EDITOR="nvim"
