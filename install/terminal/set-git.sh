@@ -12,6 +12,6 @@ if [[ -n "${UMAKU_USER_NAME//[[:space:]]/}" ]]; then
   git config --global user.name "$UMAKU_USER_NAME"
 fi
 
-if [[ -n "${UAMKU_USER_EMAIL//[[:space:]]/}" ]]; then
+if [[ -n "${UMAKU_USER_EMAIL//[[:space:]]/}" ]]; then
   git config --global user.email "$UMAKU_USER_EMAIL"
 fi

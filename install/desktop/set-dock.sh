@@ -3,6 +3,8 @@
 # Favorite apps for dock
 apps=(
 	"google-chrome.desktop"
+	"WhatsApp.desktop"
+	"Docker.desktop"
 	"org.gnome.Settings.desktop"
 	"org.gnome.Nautilus.desktop"
 	"localsend_app.desktop"
@@ -16,7 +18,7 @@ desktop_dirs=(
 	"/var/lib/flatpak/exports/share/applications"
 	"/usr/share/applications"
 	"/usr/local/share/applications"
-	"$HOME/applications"
+	"$HOME/.local/share/applications"
 )
 
 # Check if a .desktop file exists for each app

@@ -1,14 +1,12 @@
 #!/bin/bash
 
-sudo apt install zsh
+# Configure the bash shell using umaku defaults
+[ -f ~/.bashrc ] && mv ~/.bashrc ~/.bashrc.bak
+cp ~/.local/share/umaku/configs/bashrc ~/.bashrc
 
-# make zsh default
-sudo chsh -s $(which zsh)
-
-# Configure the bash shell using Umaku defaults
-[ -f ~/.local/share/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
-cp ~/.local/share/umaku/configs/.zshrc ~/.zshhrc
+# Load the PATH for use later in the installers
+source ~/.local/share/umaku/defaults/bash/shell
 
 [ -f ~/.inputrc ] && mv ~/.inputrc ~/.inputrc.bak
-# Configure the inputrc using Umaku defaults
+# Configure the inputrc using umaku defaults
 cp ~/.local/share/umaku/configs/inputrc ~/.inputrc

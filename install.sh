@@ -3,11 +3,6 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-# Remove old Umaku dir
-if [ -d "~/.local/share/umaku" ]; then
-    rm -r "~/.local/share/umaku"
-fi
-
 # Give people a chance to retry running the installation
 trap 'echo "umaku installation failed! You can retry by running: source ~/.local/share/umaku/install.sh"' ERR
 

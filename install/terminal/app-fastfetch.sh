@@ -7,7 +7,7 @@ sudo apt install -y fastfetch
 
 # Only attempt to set configuration if fastfetch is not already set
 if [ ! -f "$HOME/.config/fastfetch/config.jsonc" ]; then
-  # Use Umaku fastfetch config
+  # Use umaku fastfetch config
   mkdir -p ~/.config/fastfetch
-  cp ~/umaku/configs/fastfetch.jsonc ~/.config/fastfetch/config.jsonc
+  cp ~/.local/share/umaku/configs/fastfetch.jsonc ~/.config/fastfetch/config.jsonc
 fi

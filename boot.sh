@@ -2,31 +2,27 @@
 
 set -e
 
-ascii_art='
-__    __                          __
-/  |  /  |                        /  |
-$$ |  $$ | _____  ____    ______  $$ |   __  __    __
-$$ |  $$ |/     \/    \  /      \ $$ |  /  |/  |  /  |
-$$ |  $$ |$$$$$$ $$$$  | $$$$$$  |$$ |_/$$/ $$ |  $$ |
-$$ |  $$ |$$ | $$ | $$ | /    $$ |$$   $$<  $$ |  $$ |
-$$ \__$$ |$$ | $$ | $$ |/$$$$$$$ |$$$$$$  \ $$ \__$$ |
-$$    $$/ $$ | $$ | $$ |$$    $$ |$$ | $$  |$$    $$/
-$$$$$$/  $$/  $$/  $$/  $$$$$$$/ $$/   $$/  $$$$$$/
+ascii_art='________                  __        ___.
+\_____  \   _____ _____  |  | ____ _\_ |__
+ /   |   \ /     \\__   \ |  |/ /  |  \ __ \
+/    |    \  Y Y  \/ __ \|    <|  |  / \_\ \
+\_______  /__|_|  (____  /__|_ \____/|___  /
+        \/      \/     \/     \/         \/
 '
 
 echo -e "$ascii_art"
-echo "=> Umaku is for fresh Ubuntu 24.04+ installations only!"
+echo "=> umaku is for fresh Ubuntu 24.04+ installations only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
 sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
-echo "Cloning Umaku..."
+echo "Cloning umaku..."
 rm -rf ~/.local/share/umaku
-git clone https://github.com/mrpbennett/umaku.git ~/.local/share/umaku >/dev/null
-if [[ $UMAKU_REF != "master" ]]; then
+git clone https://github.com/basecamp/umaku.git ~/.local/share/umaku >/dev/null
+if [[ $umaku_REF != "master" ]]; then
 	cd ~/.local/share/umaku
-	git fetch origin "${UMAKU_REF:-stable}" && git checkout "${UMAKU_REF:-stable}"
+	git fetch origin "${umaku_REF:-stable}" && git checkout "${umaku_REF:-stable}"
 	cd -
 fi
 
