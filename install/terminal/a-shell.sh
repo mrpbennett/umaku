@@ -7,10 +7,11 @@ sudo chsh -s $(which zsh)
 
 # Configure the bash shell using Umaku defaults
 [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshhrc.bak
-cp ~/umaku/configs/zshhrc ~/.zshhrc
+cp ~/umaku/configs/.zshrc ~/.zshhrc
 
-# Load the PATH for use later in the installers
-source ~/umaku/defaults/zsh/shell
+# Set complete path
+export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omakub/bin:$PATH"
+set +h
 
 [ -f ~/.inputrc ] && mv ~/.inputrc ~/.inputrc.bak
 # Configure the inputrc using Umaku defaults
