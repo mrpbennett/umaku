@@ -6,11 +6,11 @@ sudo apt install zsh
 sudo chsh -s $(which zsh)
 
 # Configure the bash shell using Umaku defaults
-[ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshhrc.bak
+[ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
 cp ~/umaku/configs/.zshrc ~/.zshhrc
 
 # Set complete path
-export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omakub/bin:$PATH"
+export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/umaku/bin:$PATH"
 set +h
 
 [ -f ~/.inputrc ] && mv ~/.inputrc ~/.inputrc.bak
