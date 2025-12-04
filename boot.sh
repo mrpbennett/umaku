@@ -19,7 +19,7 @@ sudo apt-get install -y git >/dev/null
 
 echo "Cloning umaku..."
 rm -rf ~/.local/share/umaku
-git clone https://github.com/basecamp/umaku.git ~/.local/share/umaku >/dev/null
+git clone https://github.com/mrpbennett/umaku.git ~/.local/share/umaku >/dev/null
 if [[ $umaku_REF != "master" ]]; then
 	cd ~/.local/share/umaku
 	git fetch origin "${umaku_REF:-stable}" && git checkout "${umaku_REF:-stable}"
