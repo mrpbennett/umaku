@@ -8,7 +8,7 @@ set -e
 trap 'echo "umaku installation failed! You can retry by running: source ~/.local/share/umaku/install.sh"' ERR
 
 # Check the distribution name and version and abort if incompatible
-source ~/.local/share/.local/share/umaku/install/check-version.sh
+source ~/.local/share/umaku/install/check-version.sh
 
 # Ask for app choices
 echo "Get ready to make a few choices..."
