@@ -6,7 +6,7 @@ set -e
 # Needed for all installers
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install -y git unzip
+sudo apt install -y unzip
 
 # Clone repo to home directory
 git clone https://github.com/mrpbennett/umaku.git

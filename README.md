@@ -31,7 +31,7 @@ It brings together the best of **Ubuntu’s power** and **macOS refinement**, pa
 On a fresh Ubuntu 22.04+ system:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/mrpbennett/umaku/refs/heads/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/mrpbennett/umaku/refs/heads/main/boot.sh)
 ```
 
 The installer guides you through optional modules and configurations.
