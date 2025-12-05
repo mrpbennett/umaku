@@ -3,10 +3,10 @@
 mkdir -p ~/.local/share/fonts
 
 cd /tmp
-wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaMono.zip
-unzip CascadiaMono.zip -d CascadiaFont
-cp CascadiaFont/*.ttf ~/.local/share/fonts
-rm -rf CascadiaMono.zip CascadiaFont
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMonoMono.zip
+unzip JetBrainsMonoMono.zip -d JetBrainsMonoFont
+cp JetBrainsMonoFont/*.ttf ~/.local/share/fonts
+rm -rf JetBrainsMonoMono.zip JetBrainsMonoFont
 
 wget -O iafonts.zip https://github.com/iaolo/iA-Fonts/archive/refs/heads/master.zip
 unzip iafonts.zip -d iaFonts

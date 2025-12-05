@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $OMAKUB_PATH/ascii.sh
+source $UMAKU_PATH/ascii.sh
 echo "" # Add spacing
-echo "                                 $(cat $OMAKUB_PATH/version)"
+echo "                                 $(cat $UMAKU_PATH/version)"
 echo "" # Add spacing

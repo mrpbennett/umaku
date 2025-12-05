@@ -1,0 +1,5 @@
+source ~/.local/share/umaku/defaults/zsh/shell
+source ~/.local/share/umaku/defaults/zsh/aliases
+source ~/.local/share/umaku/defaults/zsh/functions
+source ~/.local/share/umaku/defaults/zsh/prompt
+source ~/.local/share/umaku/defaults/zsh/init

@@ -15,11 +15,11 @@ set_font() {
 		fc-cache
 		cd -
 		clear
-		source $OMAKUB_PATH/ascii.sh
+		source $UMAKU_PATH/ascii.sh
 	fi
 
 	gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 10"
-	cp "$OMAKUB_PATH/configs/alacritty/fonts/$file_name.toml" ~/.config/alacritty/font.toml
+	cp "$UMAKU_PATH/configs/alacritty/fonts/$file_name.toml" ~/.config/alacritty/font.toml
 	sed -i "s/\"editor.fontFamily\": \".*\"/\"editor.fontFamily\": \"$font_name\"/g" ~/.config/Code/User/settings.json
 }
 
@@ -30,22 +30,14 @@ else
 fi
 
 case $choice in
-"Cascadia Mono")
-	set_font "CaskaydiaMono Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaMono.zip" "ttf"
-	;;
-"Fira Mono")
-	set_font "FiraMono Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraMono.zip" "otf"
-	;;
+
 "JetBrains Mono")
 	set_font "JetBrainsMono Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip" "ttf"
 	;;
-"Meslo")
-	set_font "MesloLGS Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip" "ttf"
-	;;
 "> Change size")
-	source $OMAKUB_PATH/bin/omakub-sub/font-size.sh
+	source $UMAKU_PATH/bin/umaku-sub/font-size.sh
 	exit
 	;;
 esac
 
-source $OMAKUB_PATH/bin/omakub-sub/menu.sh
+source $UMAKU_PATH/bin/umaku-sub/menu.sh

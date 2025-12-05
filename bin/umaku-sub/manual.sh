@@ -1,4 +1,4 @@
 #!/bin/bash
 
-xdg-open "https://manual.omakub.org" &>/dev/null
-source $OMAKUB_PATH/bin/omakub-sub/menu.sh
+xdg-open "https://manual.umaku.org" &>/dev/null
+source $UMAKU_PATH/bin/umaku-sub/menu.sh
