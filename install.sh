@@ -14,11 +14,17 @@ echo "Get ready to make a few choices..."
 source ~/.local/share/umaku/install/terminal/required/app-gum.sh >/dev/null
 source ~/.local/share/umaku/install/identification.sh
 
+
+
 # Desktop software and tweaks will only be installed if we're running Gnome
 if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   # Ensure computer doesn't go to sleep or lock while installing
   gsettings set org.gnome.desktop.screensaver lock-enabled false
   gsettings set org.gnome.desktop.session idle-delay 0
+
+  # Install security feature
+  echo "Installing security features..."
+  source ~/.local/share/umaku/security.sh
 
   echo "Installing terminal and desktop tools..."
 
@@ -27,6 +33,7 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
 
   # Install desktop tools and tweaks
   source ~/.local/share/umaku/install/desktop.sh
+
 
   # Revert to normal idle and lock settings
   gsettings set org.gnome.desktop.screensaver lock-enabled true
