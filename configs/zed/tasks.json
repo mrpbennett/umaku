@@ -1,0 +1,14 @@
+[
+  {
+    "label": "start lazygit",
+    "command": "lazygit -p $ZED_WORKTREE_ROOT",
+    "reveal": "always",
+    "hide": "on_success"
+  },
+  {
+    "label": "start k9s",
+    "command": "k9s",
+    "reveal": "always",
+    "hide": "on_success"
+  }
+]
