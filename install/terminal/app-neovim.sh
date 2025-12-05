@@ -35,10 +35,3 @@ if [ ! -d "$HOME/.config/nvim" ]; then
   # Ensure editor.neo-tree is used by default
   cp ~/.local/share/umaku/configs/neovim/lazyvim.json ~/.config/nvim/
 fi
-
-# Replace desktop launcher with one running inside Alacritty
-if [[ -d ~/.local/share/applications ]]; then
-  sudo rm -rf /usr/share/applications/nvim.desktop
-  sudo rm -rf /usr/local/share/applications/nvim.desktop
-  source ~/.local/share/umaku/applications/Neovim.sh
-fi
