@@ -3,12 +3,12 @@
 # Favorite apps for dock
 apps=(
     "org.gnome.Nautilus.desktop"
-	"google-chrome.desktop"
-	"Ghostty.desktop"
-	"WhatsApp.desktop"
-	"Docker.desktop"
-	"localsend_app.desktop"
-	"org.gnome.Settings.desktop"
+    "google-chrome.desktop"
+    "com.mitchellh.ghostty.desktop"
+    "WhatsApp.desktop"
+    "Docker.desktop"
+    "localsend_app.desktop"
+    "org.gnome.Settings.desktop"
 )
 
 # Array to hold installed favorite apps
