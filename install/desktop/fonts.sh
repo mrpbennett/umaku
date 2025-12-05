@@ -3,10 +3,10 @@
 mkdir -p ~/.local/share/fonts
 
 cd /tmp
-wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMonoMono.zip
-unzip JetBrainsMonoMono.zip -d JetBrainsMonoFont
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+unzip JetBrainsMono.zip -d JetBrainsMonoFont
 cp JetBrainsMonoFont/*.ttf ~/.local/share/fonts
-rm -rf JetBrainsMonoMono.zip JetBrainsMonoFont
+rm -rf JetBrainsMono.zip JetBrainsMonoFont
 
 wget -O iafonts.zip https://github.com/iaolo/iA-Fonts/archive/refs/heads/master.zip
 unzip iafonts.zip -d iaFonts
