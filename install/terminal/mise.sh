@@ -7,3 +7,9 @@ wget -qO - https://mise.jdx.dev/gpg-key.pub | gpg --dearmor | sudo tee /etc/apt/
 echo "deb [signed-by=/etc/apt/keyrings/mise-archive-keyring.gpg arch=$(dpkg --print-architecture)] https://mise.jdx.dev/deb stable main" | sudo tee /etc/apt/sources.list.d/mise.list
 sudo apt update
 sudo apt install -y mise
+
+# Sets my languages
+mise use --global node@lts
+mise use --global go@latest
+mise use --global python@latest
+mise use --global java@latest
