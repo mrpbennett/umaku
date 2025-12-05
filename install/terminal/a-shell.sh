@@ -3,7 +3,7 @@
 sudo apt install zsh -y
 
 # make zsh default
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $USER
 
 # Configure the bash shell using umaku defaults
 [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.bak
