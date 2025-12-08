@@ -14,8 +14,6 @@ echo "Get ready to make a few choices..."
 source ~/.local/share/umaku/install/terminal/required/app-gum.sh >/dev/null
 source ~/.local/share/umaku/install/identification.sh
 
-
-
 # Desktop software and tweaks will only be installed if we're running Gnome
 if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   # Ensure computer doesn't go to sleep or lock while installing
@@ -30,6 +28,8 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   # Install desktop tools and tweaks
   source ~/.local/share/umaku/install/desktop.sh
 
+  # Install home row mods and capslocl remap
+  source ~/.local/share/umaku/defaults/keymapping.sh
 
   # Revert to normal idle and lock settings
   gsettings set org.gnome.desktop.screensaver lock-enabled true
