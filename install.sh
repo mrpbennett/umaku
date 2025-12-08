@@ -28,7 +28,7 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   # Install desktop tools and tweaks
   source ~/.local/share/umaku/install/desktop.sh
 
-  # Install home row mods and capslocl remap
+  # Install home row mods and capslock remap
   source ~/.local/share/umaku/defaults/keymapping.sh
 
   # Revert to normal idle and lock settings

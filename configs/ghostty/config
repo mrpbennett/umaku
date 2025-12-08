@@ -1,5 +1,4 @@
-# Dynamic theme colors
-config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+theme = catppuccin-macchiato
 
 # Font
 font-family = "JetBrainsMono Nerd Font Mono"

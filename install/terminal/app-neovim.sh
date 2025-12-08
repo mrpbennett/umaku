@@ -14,7 +14,5 @@ sudo apt install -y luarocks tree-sitter-cli
 
 # Only attempt to set configuration if Neovim has never been run
 if [ ! -d "$HOME/.config/nvim" ]; then
-  git clone https://github.com/LazyVim/starter ~/.config/nvim
-  rm -rf ~/.config/nvim/.git
-  cp -R ~/.local/share/umaku/configs/neovim ~/.config/nvim/
+    cp -R ~/.local/share/umaku/configs/neovim ~/.config/nvim
 fi
