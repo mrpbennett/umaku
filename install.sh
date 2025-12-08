@@ -22,10 +22,6 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   gsettings set org.gnome.desktop.screensaver lock-enabled false
   gsettings set org.gnome.desktop.session idle-delay 0
 
-  # Install security feature
-  echo "Installing security features..."
-  source ~/.local/share/umaku/security.sh
-
   echo "Installing terminal and desktop tools..."
 
   # Install terminal tools
