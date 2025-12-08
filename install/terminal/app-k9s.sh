@@ -54,10 +54,9 @@ sudo install -m 755 k9s /usr/local/bin/k9s
 cd -
 rm -rf "$TMP_DIR"
 
-# Adding catppuccin theme
-OUT="${XDG_CONFIG_HOME:-$HOME/.config}/k9s/skins"
-mkdir -p "$OUT"
-curl -L https://github.com/catppuccin/k9s/archive/main.tar.gz | tar xz -C "$OUT" --strip-components=2 k9s-main/dist
+# use the configs from umaku
+rm -rf ~/.config/k9s
+cp -R ~/.local/share/umaku/configs/k9s ~/.config/k9s
 
 # Verify installation
 if command -v k9s &> /dev/null; then

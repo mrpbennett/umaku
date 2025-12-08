@@ -1,10 +1,12 @@
 [
+  // task for starting lazygit
   {
     "label": "start lazygit",
     "command": "lazygit -p $ZED_WORKTREE_ROOT",
     "reveal": "always",
     "hide": "on_success"
   },
+  // task for starting k9s
   {
     "label": "start k9s",
     "command": "k9s",

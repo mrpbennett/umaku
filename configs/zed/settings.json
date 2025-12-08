@@ -7,10 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "terminal": {
+    "font_size": 14.0
+  },
   "disable_ai": false,
+  // disable nes suggestions
   "show_edit_predictions": false,
+  // ---
   "agent": {
-    "default_profile": "write",
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4"
@@ -31,7 +36,7 @@
   // vim settings ---
   "vim_mode": true,
   "cursor_blink": false,
-  "relative_line_numbers": "enabled",
+  "relative_line_numbers": true,
   "scroll_beyond_last_line": "off",
   "scrollbar": { "show": "never" },
   // vim settings end ---
@@ -40,7 +45,7 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha (blue)"
+    "dark": "Catppuccin Mocha"
   },
   // Indentation, rainbow indentation
   "indent_guides": {

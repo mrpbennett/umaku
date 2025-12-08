@@ -3,7 +3,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "leader f t": "workspace::ToggleBottomDock"
+      "space f t": "workspace::ToggleBottomDock"
     }
   },
   // Window's navigation
@@ -80,26 +80,7 @@
       "space q q": "zed::Quit"
     }
   },
-  // LazyGit
-  {
-    "context": "Workspace",
-    "bindings": {
-      "space g g": [
-        "task::Spawn",
-        { "task_name": "start lazygit", "reveal_target": "center" }
-      ]
-    }
-  },
-  // K9s
-  {
-    "context": "Workspace",
-    "bindings": {
-      "space k 8": [
-        "task::Spawn",
-        { "task_name": "start k9s", "reveal_target": "center" }
-      ]
-    }
-  },
+
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
@@ -148,7 +129,7 @@
       // Close buffer
       "space b d": "pane::CloseActiveItem",
       // Close inactive buffers
-      "space b q": "pane::CloseInactiveItems",
+      "space b q": "pane::CloseOtherItems",
       // New file
       "space b n": "workspace::NewFile",
       // Search in the current buffer
@@ -182,7 +163,6 @@
       "space |": "pane::SplitRight",
       "space w c": "pane::CloseAllItems",
       "space w d": "pane::CloseAllItems",
-      "space o p": "outline_panel::ToggleFocus",
       // Jump to hunks
       "] h": "editor::GoToHunk",
       "[ h": "editor::GoToPreviousHunk",
@@ -236,6 +216,29 @@
     "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
     "bindings": {
       "b": "vim::AnyBrackets"
+    }
+  },
+
+  // -- Tasks --
+
+  // LazyGit
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space g g": [
+        "task::Spawn",
+        { "task_name": "start lazygit", "reveal_target": "center" }
+      ]
+    }
+  },
+  // K9s
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space k 8": [
+        "task::Spawn",
+        { "task_name": "start k9s", "reveal_target": "center" }
+      ]
     }
   }
 ]

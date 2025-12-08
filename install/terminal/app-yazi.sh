@@ -23,3 +23,7 @@ cargo build --release --locked
 # Install binaries
 sudo mv target/release/yazi /usr/local/bin/
 sudo mv target/release/ya /usr/local/bin/
+
+# use the configs from umaku
+rm -rf ~/.config/yazi
+cp -R ~/.local/share/umaku/configs/yazi ~/.config/yazi
