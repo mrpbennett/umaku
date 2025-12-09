@@ -29,7 +29,7 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   source ~/.local/share/umaku/install/desktop.sh
 
   # Install home row mods and capslock remap
-  source ~/.local/share/umaku/defaults/keymapping.sh
+  source ~/.local/share/umaku/defaults/keyboard/kanata-install.sh
 
   # Revert to normal idle and lock settings
   gsettings set org.gnome.desktop.screensaver lock-enabled true

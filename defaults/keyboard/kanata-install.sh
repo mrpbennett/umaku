@@ -22,13 +22,6 @@ if ! command -v kanata &> /dev/null; then
             exit 1
         }
 
-        # Install dependencies for building from source
-        echo "Installing build dependencies..."
-        sudo apt install -y curl build-essential git || {
-            echo "Error: Failed to install build dependencies"
-            exit 1
-        }
-
         # Install Rust if not available
         if ! command -v cargo &> /dev/null; then
             echo "Installing Rust..."
