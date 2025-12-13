@@ -13,11 +13,11 @@ echo "Installing kanata homerow mods configuration..."
 if ! command -v kanata &> /dev/null; then
     echo "Installing kanata..."
 
-    # Check if we're on Ubuntu/Debian
-    if command -v apt &> /dev/null; then
+    # Check if we're on Fedora
+    if command -v dnf &> /dev/null; then
         # Update package list
         echo "Updating package list..."
-        sudo apt update || {
+        sudo dnf update -y || {
             echo "Error: Failed to update package list"
             exit 1
         }
@@ -82,7 +82,7 @@ if ! command -v kanata &> /dev/null; then
         echo "Kanata successfully installed to /usr/local/bin/kanata"
     else
         echo "Error: Unsupported package manager. Please install kanata manually."
-        echo "This script requires apt (Ubuntu/Debian)."
+        echo "This script requires dnf (Fedora)."
         exit 1
     fi
 else

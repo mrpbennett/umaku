@@ -2,9 +2,9 @@
  <img src="misc/imgs/banner.png"/>
 </h3>
 
-### *A smooth, skillful, and elegant Ubuntu setup framework.*
+### *A smooth, skillful, and elegant Fedora setup framework.*
 
-**Umaku** (うまく — *"smoothly / skillfully / efficiently"*) is a production-ready, automated setup framework that transforms a fresh Ubuntu installation into a beautifully polished, macOS-inspired developer workstation. Built with modularity and desktop-friendliness in mind, Umaku delivers enterprise-level automation with zero-maintenance security.
+**Umaku** (うまく — *"smoothly / skillfully / efficiently"*) is a production-ready, automated setup framework that transforms a fresh Fedora installation into a beautifully polished, macOS-inspired developer workstation. Built with modularity and desktop-friendliness in mind, Umaku delivers enterprise-level automation with zero-maintenance security.
 
 ---
 
@@ -12,7 +12,7 @@
 
 🎯 **Desktop-First Design** — Unlike server-focused scripts, Umaku is built specifically for desktop/laptop workflows  
 🛡️ **Automated Security** — Set-and-forget security with anacron scheduling for machines that aren't always on  
-🎨 **macOS Polish** — Brings macOS refinement to Ubuntu's power with Catppuccin theming and refined UI  
+🎨 **macOS Polish** — Brings macOS refinement to Fedora's power with Catppuccin theming and refined UI
 🧩 **True Modularity** — Terminal-only or full desktop setup, your choice  
 ⚡ **Modern Stack** — Leverages the latest tools (mise, zed, ghostty, starship) with sensible defaults  
 
@@ -20,14 +20,14 @@
 
 ## 🚀 **Quick Start**
 
-**For Ubuntu 24.04+ systems:**
+**For Fedora 39+ systems:**
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/mrpbennett/umaku/refs/heads/main/boot.sh)
 ```
 
 The interactive installer will guide you through:
-- **System validation** (Ubuntu 24.04+, x86_64 architecture)
+- **System validation** (Fedora 39+, x86_64 architecture)
 - **User identification** (Git configuration)
 - **Component selection** (Terminal-only or full desktop setup)
 - **Security hardening** (Automated malware/rootkit detection, integrity monitoring)
@@ -163,7 +163,7 @@ Rather than endless options, Umaku provides:
 ## 🧪 **System Requirements**
 
 **Required:**
-- Ubuntu 24.04+ (fresh installation recommended)
+- Fedora 39+ (fresh installation recommended)
 - x86_64 architecture
 - Internet connection
 - Sudo privileges
@@ -174,8 +174,8 @@ Rather than endless options, Umaku provides:
 - GNOME desktop environment (for full experience)
 
 **Tested On:**
-- Ubuntu 24.04 LTS Desktop
-- Ubuntu 24.10 Desktop
+- Fedora 39+ Workstation
+- Fedora 40+ Workstation
 - Fresh installations and existing systems
 
 ---
@@ -227,10 +227,10 @@ We welcome contributions! Please:
 1. **Open an issue** for bugs or feature requests
 2. **Start a discussion** before major changes
 3. **Follow existing patterns** in the codebase
-4. **Test on fresh Ubuntu installations**
+4. **Test on fresh Fedora installations**
 
 **Areas where help is needed:**
-- Testing on different Ubuntu variants
+- Testing on different Fedora variants
 - Additional security hardening
 - KDE/other desktop environment support
 - Documentation improvements
@@ -259,9 +259,9 @@ MIT License — See [LICENSE](LICENSE) for details.
 Umaku stands on the shoulders of giants:
 - **Catppuccin** community for beautiful, consistent theming
 - **LazyVim** for excellent Neovim configuration
-- **Ubuntu** team for the solid foundation
+- **Fedora** team for the solid foundation
 - All the amazing open-source tools integrated in this project
 
 ---
 
-**Ready to transform your Ubuntu experience? [Get started now!](#-quick-start)**
+**Ready to transform your Fedora experience? [Get started now!](#-quick-start)**

@@ -2,7 +2,7 @@
 
 set -e
 
-# k9s installation script for Ubuntu
+# k9s installation script for Fedora
 # Fetches the latest release from GitHub and installs it
 
 # Detect architecture

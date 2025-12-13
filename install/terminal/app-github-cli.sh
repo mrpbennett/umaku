@@ -1,11 +1,8 @@
 #!/bin/bash
 
-if [ ! -f /etc/apt/sources.list.d/github-cli.list ]; then
-    [ -f /usr/share/keyrings/githubcli-archive-keyring.gpg ] && sudo rm /usr/share/keyrings/githubcli-archive-keyring.gpg
-    curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg status=none
-    sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list >/dev/null
+if [ ! -f /etc/yum.repos.d/gh-cli.repo ]; then
+    sudo dnf install -y 'dnf-command(config-manager)'
+    sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 fi
 
-sudo apt update
-sudo apt install gh -y
+sudo dnf install gh -y

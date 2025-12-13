@@ -16,11 +16,11 @@ ascii_art='
 '
 
 echo -e "$ascii_art"
-echo "=> umaku is for fresh Ubuntu 24.04+ installations only!"
+echo "=> umaku is for fresh Fedora 39+ installations only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
-sudo apt-get update >/dev/null
-sudo apt-get install -y git >/dev/null
+sudo dnf update -y >/dev/null
+sudo dnf install -y git >/dev/null
 
 echo "Cloning umaku..."
 rm -rf ~/.local/share/umaku

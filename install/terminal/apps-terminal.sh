@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install -y fzf ripgrep bat eza zoxide plocate apache2-utils fd-find
+sudo dnf install -y fzf ripgrep bat eza zoxide mlocate httpd-tools fd-find

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install zsh -y
+sudo dnf install zsh -y
 
 # make zsh default
 sudo chsh -s $(which zsh) $USER

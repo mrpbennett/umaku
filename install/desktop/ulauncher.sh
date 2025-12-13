@@ -1,13 +1,11 @@
 #!/bin/bash
 
-sudo add-apt-repository universe -y
-sudo add-apt-repository ppa:agornostal/ulauncher -y
-sudo apt update
-sudo apt install ulauncher -y
+# Install ulauncher via Flatpak since it's not in Fedora repos
+sudo flatpak install -y flathub io.ulauncher.Ulauncher
 
 # Start ulauncher to have it populate config before we overwrite
 mkdir -p ~/.config/autostart/
 cp ~/.local/share/umaku/configs/ulauncher.desktop ~/.config/autostart/ulauncher.desktop
-gtk-launch ulauncher.desktop >/dev/null 2>&1
+flatpak run io.ulauncher.Ulauncher >/dev/null 2>&1
 sleep 2 # ensure enough time for ulauncher to set defaults
 cp ~/.local/share/umaku/configs/ulauncher.json ~/.config/ulauncher/settings.json

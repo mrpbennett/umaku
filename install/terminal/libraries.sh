@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt install -y \
-  build-essential pkg-config autoconf bison clang rustc pipx \
-  libssl-dev libreadline-dev zlib1g-dev libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev libjemalloc2 \
-  libvips imagemagick libmagickwand-dev mupdf mupdf-tools \
-  redis-tools sqlite3 libsqlite3-0 libmysqlclient-dev libpq-dev postgresql-client postgresql-client-common
+sudo dnf install -y \
+  @development-tools pkg-config autoconf bison clang rustc pipx \
+  openssl-devel readline-devel zlib-devel libyaml-devel readline-devel ncurses-devel libffi-devel gdbm-devel jemalloc \
+  vips imagemagick ImageMagick-devel mupdf mupdf-tools \
+  redis sqlite sqlite-devel mysql-devel libpq-devel postgresql postgresql-contrib
